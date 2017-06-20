@@ -38,6 +38,19 @@ class SearchResultsDataSource: NSObject , UITableViewDataSource{
         nearestAttractionCell.deliveryTypeLabel.text = viewModel.deliveryFeeformattedValue
         nearestAttractionCell.asapLabel.text = viewModel.asapFormatterValue
 
+        let coverImageUrl  = self.resturantList[indexPath.row].coverImgUrl
+        
+        // Lazy load the images on each cell
+        
+        let imageUrl = URL(string: coverImageUrl)
+        
+        URLSession.shared.dataTask(with: imageUrl!, completionHandler: { (data, reposnse, error) in
+            DispatchQueue.main.async(execute: {
+                nearestAttractionCell.imageView?.image = UIImage(data: data!)
+                nearestAttractionCell.setNeedsLayout()
+            })
+        }).resume()
+
         return nearestAttractionCell
         
     }

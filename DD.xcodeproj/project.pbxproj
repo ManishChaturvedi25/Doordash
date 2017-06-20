@@ -74,7 +74,7 @@
 		97A898431EC1642300195136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A8984D1EC1695000195136 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		97F3BB921EF5AA1800AA523D /* DD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DD-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		97F3BB931EF5AA1900AA523D /* DD-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DD-Bridging-Header.m"; path = "DD/DD-Bridging-Header.m"; sourceTree = "<group>"; };
+		97F3BB931EF5AA1900AA523D /* DD-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DD-Bridging-Header.m"; sourceTree = "<group>"; };
 		A05AE20FDA65C820D9027EC2 /* Pods-DDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDTests/Pods-DDTests.release.xcconfig"; sourceTree = "<group>"; };
 		C557EF1CD529DC4F401C8B13 /* Pods-DD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DD/Pods-DD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,7 +170,6 @@
 		97A8981D1EC1642200195136 = {
 			isa = PBXGroup;
 			children = (
-				97F3BB931EF5AA1900AA523D /* DD-Bridging-Header.m */,
 				97A898281EC1642200195136 /* DD */,
 				97A898401EC1642300195136 /* DDTests */,
 				97A898271EC1642200195136 /* Products */,
@@ -192,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				97F3BB921EF5AA1800AA523D /* DD-Bridging-Header.h */,
+				97F3BB931EF5AA1900AA523D /* DD-Bridging-Header.m */,
 				970F13CE1EC819F900CAFC87 /* Networking */,
 				979E33D31EC2F8E500D66DD3 /* Data Source */,
 				979E33D01EC2F54F00D66DD3 /* ViewModels */,
