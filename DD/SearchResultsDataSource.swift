@@ -46,7 +46,7 @@ class SearchResultsDataSource: NSObject , UITableViewDataSource{
         
         URLSession.shared.dataTask(with: imageUrl!, completionHandler: { (data, reposnse, error) in
             DispatchQueue.main.async(execute: {
-                nearestAttractionCell.imageView?.image = UIImage(data: data!)
+                nearestAttractionCell.storeImageView.image = UIImage(data: data!)
                 nearestAttractionCell.setNeedsLayout()
             })
         }).resume()
