@@ -45,10 +45,7 @@ class FavouritesDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let favouriteItemCell = tableView.dequeueReusableCell(withIdentifier:FavouriteItemCell.reuseIdentified, for: indexPath) as! FavouriteItemCell
-        
-        //let menuCategories = self.menuItems[indexPath.row].menuCategories as? [[String:Any]]
-        
-        
+                
         
        favouriteItemCell.menuCategoryNameLabel.text  = self.menuCategoriesList[indexPath.row].title
         

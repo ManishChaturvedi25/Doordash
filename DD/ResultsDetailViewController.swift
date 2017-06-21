@@ -29,32 +29,30 @@ class ResultsDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
          
-        //let manager = AFHTTPSessionManager()
         tableView.dataSource = dataSource
         let apiClient = DoorDashAPIClient()
         
         apiClient.fetchMenuItems(resturantID: self.resturant.id) { menuList, error in
             
-            print(menuList);
-
-            if let dataSource = self.tableView.dataSource as? FavouritesDataSource {
-                DispatchQueue.main.async {
-
+        print(menuList);
+        
+        let imageUrl = URL(string: self.resturant.coverImgUrl)
+            
+        URLSession.shared.dataTask(with: imageUrl!, completionHandler: { (data, reposnse, error) in
+            DispatchQueue.main.async(execute: {
+                self.storeImageView.image = UIImage(data: data!)
+                if let dataSource = self.tableView.dataSource as? FavouritesDataSource {
                     dataSource.updateDataSource(data: menuList)
                     self.tableView.reloadData()
                 }
-            }
+            })
+        }).resume()
             
-        }
-        
+            
     }
+        
+}
     
     override func viewWillAppear(_ animated: Bool) {
         
