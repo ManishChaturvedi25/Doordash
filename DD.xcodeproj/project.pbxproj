@@ -30,6 +30,7 @@
 		97A898371EC1642200195136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A898351EC1642200195136 /* LaunchScreen.storyboard */; };
 		97A898421EC1642300195136 /* DDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A898411EC1642300195136 /* DDTests.swift */; };
 		97A8984E1EC1695000195136 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A8984D1EC1695000195136 /* MapKit.framework */; };
+		97C621331EFAC0B200266107 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C621321EFAC0B200266107 /* DataController.swift */; };
 		97F3BB941EF5AA1900AA523D /* DD-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3BB931EF5AA1900AA523D /* DD-Bridging-Header.m */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		97A898411EC1642300195136 /* DDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDTests.swift; sourceTree = "<group>"; };
 		97A898431EC1642300195136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A8984D1EC1695000195136 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		97C621321EFAC0B200266107 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		97F3BB921EF5AA1800AA523D /* DD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DD-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		97F3BB931EF5AA1900AA523D /* DD-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DD-Bridging-Header.m"; sourceTree = "<group>"; };
 		A05AE20FDA65C820D9027EC2 /* Pods-DDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDTests/Pods-DDTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				979E33CC1EC2BA3E00D66DD3 /* SearchResultsTableViewController.swift */,
 				979E33F91EC5EFB000D66DD3 /* ResultsDetailViewController.swift */,
 				979E33FB1EC5F43D00D66DD3 /* FavouritesViewController.swift */,
+				97C621321EFAC0B200266107 /* DataController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				979E33CD1EC2BA3E00D66DD3 /* SearchResultsTableViewController.swift in Sources */,
 				979E34001EC5F9B600D66DD3 /* FavouritesDataSource.swift in Sources */,
 				970F13DC1ECABD4E00CAFC87 /* SearchResultsViewModel.swift in Sources */,
+				97C621331EFAC0B200266107 /* DataController.swift in Sources */,
 				970F13D21EC81AFD00CAFC87 /* DoorDashError.swift in Sources */,
 				97A8982C1EC1642200195136 /* ViewController.swift in Sources */,
 				97A8982A1EC1642200195136 /* AppDelegate.swift in Sources */,
